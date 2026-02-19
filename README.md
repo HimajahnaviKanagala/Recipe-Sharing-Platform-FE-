@@ -2,7 +2,7 @@
 
 A modern, responsive recipe sharing web application where users can discover, create, and share their favorite recipes with a vibrant community of food enthusiasts.
 
-![Recipe Sharing Platform]C:\Users\k.hima jahnavi\OneDrive\Pictures\Screenshots\Screenshot 2026-02-19 234204.png
+![Homepage](./screenshots/homepage.png)
 
 ---
 
