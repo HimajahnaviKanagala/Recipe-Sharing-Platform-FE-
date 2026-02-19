@@ -2,7 +2,7 @@
 
 A modern, responsive recipe sharing web application where users can discover, create, and share their favorite recipes with a vibrant community of food enthusiasts.
 
-![Recipe Sharing Platform](https://via.placeholder.com/1200x600/FF6B6B/FFFFFF?text=Recipe+Sharing+Platform)
+![Recipe Sharing Platform](C:\Users\k.hima jahnavi\OneDrive\Pictures\Screenshots\Screenshot 2026-02-19 234204.png)
 
 ---
 
@@ -141,9 +141,6 @@ client/
 │   ├── main.jsx
 │   └── index.css
 ├── .env
-├── .env.example
-├── tailwind.config.js
-├── postcss.config.js
 ├── vite.config.js
 ├── package.json
 └── README.md
@@ -156,7 +153,7 @@ client/
 ### Prerequisites:
 - Node.js (v18 or higher)
 - npm or yarn
-- Backend API running (see [Backend Repository](https://github.com/yourusername/recipe-backend))
+- Backend API running (see [Backend Repository](https://github.com/HimajahnaviKanagala/Recipe-Sharing-Platform-BE-))
 
 ### Step 1: Clone Repository
 ```bash
@@ -195,13 +192,6 @@ npm run build
 ```
 
 Production-ready files will be in `dist/` folder.
-
-### Step 6: Preview Production Build
-```bash
-npm run preview
-```
-
-Preview build at `http://localhost:4173`
 
 ---
 
@@ -245,11 +235,11 @@ git push origin main
 
 ## 🔌 Backend API Link
 
-**Backend Repository:** [https://github.com/yourusername/recipe-backend](https://github.com/yourusername/recipe-backend)
+**Backend Repository:** https://github.com/HimajahnaviKanagala/Recipe-Sharing-Platform-BE-
 
 **API Base URL:** 
 - Development: `http://localhost:5000/api`
-- Production: `https://your-backend.onrender.com/api`
+- Production: `https://recipe-sharing-platform-be-2-obn9.onrender.com/api/recipes`
 
 **API Documentation:** See backend README for full API endpoints and usage.
 
@@ -362,266 +352,6 @@ Role: ADMIN
 
 ---
 
-## 🎯 Features Walkthrough
-
-### User Flow:
-```
-1. Landing Page
-   ↓
-2. Register/Login
-   ↓
-3. Browse Recipes
-   ↓
-4. View Recipe Details
-   ↓
-5. Create Own Recipe
-   ↓
-6. Manage My Recipes
-   ↓
-7. Use AI Chatbot for Suggestions
-```
-
-### Admin Flow:
-```
-1. Login as Admin
-   ↓
-2. Access Admin Panel
-   ↓
-3. View Platform Statistics
-   ↓
-4. Manage Users (Change Roles/Delete)
-   ↓
-5. Moderate Recipes (Feature/Delete)
-   ↓
-6. Monitor Platform Activity
-```
-
----
-
-## 🧪 Testing
-
-### Manual Testing Checklist:
-
-**Authentication:**
-- ✅ User can register
-- ✅ User can login
-- ✅ User can logout
-- ✅ Protected routes redirect to login
-- ✅ Token persists on page refresh
-
-**Recipes:**
-- ✅ User can view all recipes
-- ✅ User can search recipes
-- ✅ User can filter by category
-- ✅ User can view recipe details
-- ✅ User can create recipe
-- ✅ User can edit own recipe
-- ✅ User can delete own recipe
-
-**AI Chatbot:**
-- ✅ Chatbot opens on button click
-- ✅ User can send messages
-- ✅ Bot responds to greetings
-- ✅ Bot suggests recipes for ingredients
-- ✅ Bot provides full recipe details
-
-**Admin:**
-- ✅ Admin can access admin panel
-- ✅ Admin can view statistics
-- ✅ Admin can manage users
-- ✅ Admin can change user roles
-- ✅ Admin can delete users
-- ✅ Admin can feature recipes
-- ✅ Admin can delete any recipe
-- ✅ Regular users cannot access admin panel
-
----
-
-## 🔧 Configuration
-
-### Tailwind CSS Custom Classes:
-
-Located in `src/index.css`:
-```css
-@layer components {
-  .btn-primary {
-    @apply bg-red-600 hover:bg-red-700 text-white font-semibold 
-           py-2.5 px-6 rounded-lg transition-all duration-200 
-           shadow-md hover:shadow-lg active:scale-95 disabled:opacity-50;
-  }
-  
-  .btn-secondary {
-    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 
-           font-semibold py-2.5 px-6 rounded-lg transition-all 
-           duration-200 active:scale-95;
-  }
-  
-  .input-field {
-    @apply w-full px-4 py-2.5 border border-gray-300 rounded-lg 
-           focus:ring-2 focus:ring-red-500 focus:border-transparent 
-           outline-none transition-all duration-200;
-  }
-  
-  .card {
-    @apply bg-white rounded-xl shadow-md hover:shadow-xl 
-           transition-shadow duration-300 overflow-hidden;
-  }
-  
-  .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-}
-```
-
----
-
-## 📦 Dependencies
-
-### Production Dependencies:
-```json
-{
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0",
-  "react-router-dom": "^6.21.0",
-  "axios": "^1.6.0"
-}
-```
-
-### Development Dependencies:
-```json
-{
-  "@vitejs/plugin-react": "^4.2.1",
-  "autoprefixer": "^10.4.16",
-  "postcss": "^8.4.32",
-  "tailwindcss": "^3.4.0",
-  "vite": "^5.0.8"
-}
-```
-
----
-
-## 🐛 Troubleshooting
-
-### Common Issues:
-
-**1. API Connection Error:**
-```
-Error: Network Error
-```
-**Solution:** Check if backend is running and `VITE_API_URL` is correct in `.env`
-
----
-
-**2. Blank Page After Build:**
-```
-White screen, no errors
-```
-**Solution:** Check browser console. Usually a routing issue. Ensure `BrowserRouter` is properly configured.
-
----
-
-**3. Styles Not Loading:**
-```
-Tailwind classes not working
-```
-**Solution:** 
-- Verify `tailwind.config.js` content paths
-- Restart dev server (`npm run dev`)
-
----
-
-**4. 404 on Refresh (Production):**
-```
-Page not found on direct URL access
-```
-**Solution:** Configure your hosting platform for SPA routing:
-
-**Vercel:** Add `vercel.json`:
-```json
-{
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
-}
-```
-
-**Netlify:** Add `_redirects` in `public/`:
-```
-/*    /index.html   200
-```
-
----
-
-## 🚀 Performance Optimization
-
-- ✅ Code splitting with React.lazy (optional)
-- ✅ Image optimization with WebP format
-- ✅ Lazy loading for images
-- ✅ Minified production builds
-- ✅ Gzip compression on hosting
-- ✅ CDN for static assets
-
----
-
-## 🔒 Security Features
-
-- ✅ JWT token authentication
-- ✅ Protected routes
-- ✅ XSS protection via React
-- ✅ HTTPS in production
-- ✅ Secure password handling (bcrypt on backend)
-- ✅ CORS configuration
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-**Your Name**
-
-- **GitHub:** [@yourusername](https://github.com/yourusername)
-- **LinkedIn:** [Your Profile](https://linkedin.com/in/yourprofile)
-- **Email:** your.email@example.com
-- **Portfolio:** [yourportfolio.com](https://yourportfolio.com)
-
----
-
-## 🙏 Acknowledgments
-
-- **React** - UI Library
-- **Tailwind CSS** - Styling Framework
-- **Vite** - Build Tool
-- **Supabase** - Backend Services
-- **Vercel** - Hosting Platform
-- **Google Gemini AI** - AI Integration
-- **Icons** - Heroicons & Emoji
-
----
-
-## 📚 Related Links
-
-- [Backend Repository](https://github.com/yourusername/recipe-backend)
-- [API Documentation](https://documenter.getpostman.com/your-collection)
-- [Live Demo](https://recipe-sharing-platform.vercel.app)
-- [Project Presentation](https://slides.com/your-presentation)
-
----
-
 ## 📈 Future Enhancements
 
 - [ ] Social features (like, comment, share)
@@ -636,34 +366,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Multi-language support
 - [ ] Dark mode
 - [ ] Progressive Web App (PWA)
-
----
-
-## 📊 Project Stats
-
-- **Total Lines of Code:** ~3,500
-- **Components:** 20+
-- **Pages:** 8
-- **API Endpoints Used:** 15+
-- **Development Time:** 2 weeks
-- **Build Size:** ~200KB (gzipped)
-
----
-
-## 🎓 Learning Outcomes
-
-This project demonstrates proficiency in:
-
-- ✅ React component architecture
-- ✅ State management with Context API
-- ✅ RESTful API integration
-- ✅ JWT authentication flow
-- ✅ Role-based authorization
-- ✅ Responsive design with Tailwind CSS
-- ✅ Form handling and validation
-- ✅ Client-side routing
-- ✅ Modern build tools (Vite)
-- ✅ Production deployment
 
 ---
 
