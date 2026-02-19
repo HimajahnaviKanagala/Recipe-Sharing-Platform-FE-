@@ -276,77 +276,77 @@ Role: ADMIN
 ## 📸 Screenshots
 
 ### 1. Homepage
-![Homepage](https://via.placeholder.com/1200x600/FF6B6B/FFFFFF?text=Homepage+-+Recipe+Listing)
+![Homepage](./screenshots/homepage.png)
 
 *Beautiful landing page with featured recipes and search functionality*
 
 ---
 
 ### 2. Login Page
-![Login](https://via.placeholder.com/1200x600/4ECDC4/FFFFFF?text=Login+Page)
+![Login](./screenshots/login.png)
 
 *Secure authentication with gradient background*
 
 ---
 
 ### 3. Register Page
-![Register](https://via.placeholder.com/1200x600/95E1D3/FFFFFF?text=Register+Page)
+![Register](./screenshots/register.png)
 
 *User-friendly registration form with validation*
 
 ---
 
 ### 4. My Recipes
-![My Recipes](https://via.placeholder.com/1200x600/F38181/FFFFFF?text=My+Recipes)
+![My Recipes](./screenshots/my-recipes.png)
 
 *Personal dashboard showing all user-created recipes*
 
 ---
 
 ### 5. Recipe Detail Page
-![Recipe Detail](https://via.placeholder.com/1200x600/AA96DA/FFFFFF?text=Recipe+Detail+Page)
+![Recipe Detail](./screenshots/recipe-detail.png)
 
 *Comprehensive recipe view with ingredients and instructions*
 
 ---
 
 ### 6. Create Recipe
-![Create Recipe](https://via.placeholder.com/1200x600/FCBAD3/FFFFFF?text=Create+Recipe+Form)
+![Create Recipe](./screenshots/create-recipe.png)
 
 *Intuitive form for adding new recipes*
 
 ---
 
 ### 7. AI Chatbot
-![AI Chatbot](https://via.placeholder.com/1200x600/A8E6CF/FFFFFF?text=AI+Cooking+Assistant)
+![AI Chatbot](./screenshots/ai-chatbot.png)
 
 *Floating chatbot providing recipe suggestions and cooking tips*
 
 ---
 
 ### 8. Admin Dashboard
-![Admin Dashboard](https://via.placeholder.com/1200x600/FFD3B6/FFFFFF?text=Admin+Dashboard)
+![Admin Dashboard](./screenshots/admin-dashboard.png)
 
 *Comprehensive admin panel with statistics and user management*
 
 ---
 
 ### 9. User Management (Admin)
-![User Management](https://via.placeholder.com/1200x600/FFAAA5/FFFFFF?text=User+Management)
+![User Management](./screenshots/user-management.png)
 
 *Admin interface for managing users and roles*
 
 ---
 
 ### 10. Recipe Moderation (Admin)
-![Recipe Moderation](https://via.placeholder.com/1200x600/FF8B94/FFFFFF?text=Recipe+Moderation)
+![Recipe Moderation](./screenshots/recipe-moderation.png)
 
 *Admin tools for moderating and featuring recipes*
 
 ---
 
 ### 11. Mobile Responsive
-![Mobile View](https://via.placeholder.com/400x800/C7CEEA/FFFFFF?text=Mobile+Responsive)
+![Mobile View](./screenshots/mobile-view.png)
 
 *Fully responsive design optimized for mobile devices*
 
