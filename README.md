@@ -207,7 +207,7 @@ Preview build at `http://localhost:4173`
 
 ## 🚀 Deployment
 
-### Deploy to Vercel (Recommended)
+### Deploy to Vercel 
 
 1. **Push to GitHub:**
 ```bash
@@ -235,48 +235,11 @@ git push origin main
    - Wait for deployment (1-2 minutes)
    - Get deployment URL
 
-### Deploy to Netlify
-```bash
-# Install Netlify CLI
-npm install -g netlify-cli
-
-# Build project
-npm run build
-
-# Deploy
-netlify deploy --prod
-```
-
-### Deploy to GitHub Pages
-
-1. Install gh-pages:
-```bash
-npm install --save-dev gh-pages
-```
-
-2. Add to `package.json`:
-```json
-{
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-  "homepage": "https://yourusername.github.io/recipe-frontend"
-}
-```
-
-3. Deploy:
-```bash
-npm run deploy
-```
-
 ---
 
 ## 🔗 Deployment Link
 
-**Live Application:** [https://recipe-sharing-platform.vercel.app](https://recipe-sharing-platform.vercel.app)
-
-**Demo Video:** [Watch Demo](https://youtube.com/your-demo-video)
+**Live Application:** https://recipe-sharing-platform-fe-vui4.vercel.app/
 
 ---
 
