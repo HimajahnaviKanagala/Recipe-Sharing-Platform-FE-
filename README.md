@@ -229,7 +229,7 @@ git push origin main
 
 ## 🔗 Deployment Link
 
-**Live Application:** https://recipe-sharing-platform-fe-vui4.vercel.app/
+**Live Application:** https://recipe-sharing-platform-fe-v2r1.vercel.app/
 
 ---
 
